@@ -1,5 +1,5 @@
 ---
-name: ig-comment
+name: spika-comment
 description: >-
   Menulis komentar bahasa Indonesia di post dan Reels orang lain yang terbaca
   seperti manusia yang punya pendapat, bukan bot atau akun "izin nyimak".
@@ -8,7 +8,7 @@ description: >-
   batch untuk putaran engagement harian.
 ---
 
-# ig-comment
+# spika-comment
 
 Berkomentar adalah dua puluh menit dengan daya ungkit tertinggi di Instagram,
 dan paling gampang dilakukan dengan buruk. Komen di posisi atas Reel dengan 40
@@ -66,7 +66,7 @@ Pilih berdasarkan isi post-nya. Jangan default ke jenis 1.
 ## Output
 
 Beri **dua opsi dengan jenis berbeda**, diberi label, plus satu kalimat soal
-mana yang akan kamu posting dan kenapa. Jalankan keduanya lewat `/ig-human`
+mana yang akan kamu posting dan kenapa. Jalankan keduanya lewat `/spika-human`
 dulu: komen pendek, jadi satu em dash atau satu frasa klise terdengar lebih
 nyaring daripada di caption.
 

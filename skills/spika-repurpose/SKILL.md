@@ -1,5 +1,5 @@
 ---
-name: ig-repurpose
+name: spika-repurpose
 description: >-
   Mengubah satu aset panjang berbahasa Indonesia (video YouTube, podcast, live
   IG/TikTok, webinar, kajian, newsletter, artikel blog, rekaman rapat dengan
@@ -9,7 +9,7 @@ description: >-
   panjang dan ingin masuk Instagram.
 ---
 
-# ig-repurpose
+# spika-repurpose
 
 Satu aset panjang yang bagus berisi empat sampai enam post. Kebanyakan orang
 mengambil satu dan membuang sisanya.
@@ -60,7 +60,7 @@ Penonton belum melihat sumbernya dan tidak akan pernah. Jangan pernah menulis
 "seperti yang aku bilang di video terbaruku" atau "full-nya di YouTube ya".
 Post-nya adalah barangnya.
 
-Beri formula hook dari `ig-reel/hooks.json` ke masing-masing dan variasikan.
+Beri formula hook dari `spika-reel/hooks.json` ke masing-masing dan variasikan.
 Lima post dari satu sumber dengan bentuk hook yang sama terbaca seperti pabrik
 konten, karena memang begitu.
 
@@ -90,5 +90,5 @@ Bilang "tulis Selasa" dan aku buatkan drafnya.
 ```
 
 Lalu buat draf berdasarkan permintaan, satu per satu, masing-masing lewat
-`/ig-reel` dan `/ig-human`. Jangan menumpahkan empat naskah jadi sekaligus.
+`/spika-reel` dan `/spika-human`. Jangan menumpahkan empat naskah jadi sekaligus.
 Semuanya akan terdengar sama dan pengguna tidak akan merekam satu pun.

@@ -1,5 +1,5 @@
 ---
-name: ig-audit
+name: spika-audit
 description: >-
   Bedah post-mortem konten Instagram yang sudah diposting pengguna: Reels mana
   yang benar-benar berhasil, kenapa, dan apa yang harus berhenti dibuat. Bisa
@@ -9,7 +9,7 @@ description: >-
   ingin tahu apa yang harus diperbanyak.
 ---
 
-# ig-audit
+# spika-audit
 
 Satu-satunya sumber jujur soal apa yang jalan untuk sebuah akun adalah akun itu
 sendiri. Setiap aturan di setiap panduan Instagram, termasuk di paket ini,
@@ -61,7 +61,7 @@ mereka, dan berani menyimpulkan sesuatu yang tidak disukai pengguna:
 
 - **Bertahan di 3 detik.** Kalau atas dan bawah berbeda di sini, masalahnya hook
   dan bukan yang lain, dan semua yang di hilir hanya pengalih perhatian.
-- **Formula hook.** Id mana dari `ig-reel/hooks.json` yang ada di lima teratas?
+- **Formula hook.** Id mana dari `spika-reel/hooks.json` yang ada di lima teratas?
 - **Format.** Reel, carousel, satu gambar.
 - **Durasi.** Kelompokkan: di bawah 15 dtk, 15-30, 30-60, di atas 60.
 - **Tema.**
@@ -82,7 +82,7 @@ lebih baik daripada mengarang satu.
 **Reel yang dapat views tapi tidak dapat follow bukan Reel gagal, itu masalah
 profil.** Reel yang tidak dapat views adalah masalah hook. Pisahkan keduanya
 sebelum merekomendasikan apa pun. Kalau jangkauan non-follower tinggi dan follow
-per jangkauan rendah, berhenti menulis ulang hook dan pergi ke `/ig-profile`.
+per jangkauan rendah, berhenti menulis ulang hook dan pergi ke `/spika-profile`.
 
 ## Output
 
@@ -114,6 +114,6 @@ PERBANYAK: yang ada harga yang kamu bayar dan angkanya.
 
 (Angka di atas ilustrasi format, bukan data.)
 
-Lalu serahkan kesimpulannya ke `/ig-plan` supaya minggu depan dibangun di atas
-bukti pengguna sendiri, dan ke `/ig-viral` supaya swipe file disaring ke
+Lalu serahkan kesimpulannya ke `/spika-plan` supaya minggu depan dibangun di atas
+bukti pengguna sendiri, dan ke `/spika-viral` supaya swipe file disaring ke
 formula yang jalan untuk akun ini secara khusus.

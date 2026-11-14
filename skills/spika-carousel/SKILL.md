@@ -1,5 +1,5 @@
 ---
-name: ig-carousel
+name: spika-carousel
 description: >-
   Membuat carousel Instagram berbahasa Indonesia: cover yang bikin orang
   menggeser, teks per slide, dan file 1080x1350 siap upload. Gunakan saat
@@ -8,7 +8,7 @@ description: >-
   akan mati kalau jadi satu gambar.
 ---
 
-# ig-carousel
+# spika-carousel
 
 Carousel adalah format dengan waktu tonton terlama di grid, karena menggeser
 adalah interaksi dan scroll bukan. Carousel juga dapat kesempatan kedua:
@@ -25,7 +25,7 @@ kerangka dengan bagian-bagian, sebelum dan sesudah, daftar yang layak
 di-screenshot (rincian modal, checklist, perbandingan harga). Pakai Reel saat
 ide punya gerakan, wajah, atau hasil yang harus dilihat terjadi.
 
-Kalau idenya satu klaim, bukan dua-duanya. Serahkan ke `/ig-reel` dan bilang.
+Kalau idenya satu klaim, bukan dua-duanya. Serahkan ke `/spika-reel` dan bilang.
 
 ## Struktur
 
@@ -86,10 +86,10 @@ teks terpotong, baris janda, atau cover yang tidak terbaca di ukuran thumbnail.
 
 Teks per slide dulu, sebagai daftar bernomor yang bisa dibaca pengguna dalam
 sepuluh detik dan diedit sebelum apa pun di-render. Lalu **caption**, yang untuk
-carousel adalah Tugas B di `/ig-caption`: caption bekerja di sini, karena cover
+carousel adalah Tugas B di `/spika-caption`: caption bekerja di sini, karena cover
 sudah memakai enam katanya.
 
-Jalankan keduanya lewat `/ig-human`. Buat file hanya setelah pengguna
+Jalankan keduanya lewat `/spika-human`. Buat file hanya setelah pengguna
 menyetujui teksnya.
 
 ```

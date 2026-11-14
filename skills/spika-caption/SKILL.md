@@ -1,5 +1,5 @@
 ---
-name: ig-caption
+name: spika-caption
 description: >-
   Menulis caption Instagram berbahasa Indonesia: baris yang selamat dari
   potongan "... selengkapnya", isi, satu ajakan, kata pencarian, dan maksimal
@@ -9,7 +9,7 @@ description: >-
   bertanya soal hashtag.
 ---
 
-# ig-caption
+# spika-caption
 
 Satu script tinggal di folder skill ini dan jalan:
 
@@ -108,7 +108,7 @@ python3 caption.py draf.txt --keywords "kue kering lebaran,hampers lebaran"
 
 1. Putuskan Tugas A atau B dan sebutkan.
 2. Tulis drafnya dalam register `voice.md` (default santai).
-3. Jalankan `/ig-human`. Caption pendek, jadi bahasa AI lebih nyaring di sini
+3. Jalankan `/spika-human`. Caption pendek, jadi bahasa AI lebih nyaring di sini
    daripada di mana pun.
 4. Jalankan `caption.py` dengan kata pencarian pengguna. Perbaiki semua GAGAL.
    Putuskan setiap PERIKSA secara terbuka, bukan diam-diam.

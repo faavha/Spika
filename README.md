@@ -1,28 +1,28 @@
 <p align="center">
-  <img src="assets/banner.svg" alt="InstaPulse - asisten konten untuk Instagram, berbahasa Indonesia" width="100%">
+  <img src="assets/banner.svg" alt="Spika - asisten konten untuk Instagram, berbahasa Indonesia" width="100%">
 </p>
 
-# InstaPulse
+# Spika
 
 **Asisten konten untuk Instagram, berbahasa Indonesia.** Tiga belas skill Claude
 yang menulis naskah Reels, caption, carousel, story, komen, balasan dan DM,
 menilai hook sebelum kamu merekam, merencanakan minggumu, dan membedah
 Insights-mu, dengan bahasa, budaya, dan kebiasaan penonton Indonesia.
 
-**Tidak ada yang diposting sebelum kamu bilang ya.** InstaPulse menulis.
+**Tidak ada yang diposting sebelum kamu bilang ya.** Spika menulis.
 Kamu yang posting.
 
 > **Cara pakai lengkap ada di [PANDUAN.md](PANDUAN.md).**
 
 ```
-/plugin marketplace add faavha/InstaPulse.ai
-/plugin install instapulse@instapulse
+/plugin marketplace add faavha/spika
+/plugin install spika@spika
 ```
 
 Lalu cukup minta dengan bahasa biasa: *"bikinin naskah reels soal ..."*,
 *"balasin komen-komen ini"*, *"rencanain minggu depan"*.
 
-InstaPulse adalah adaptasi dari
+Spika adalah adaptasi dari
 [instagram-agent-skill](https://github.com/Jakeschincariol/instagram-agent-skill)
 karya Jake Schincariol (MIT), ditulis ulang untuk bahasa Indonesia.
 
@@ -44,38 +44,38 @@ karya Jake Schincariol (MIT), ditulis ulang untuk bahasa Indonesia.
 
 | perintah | fungsinya |
 | --- | --- |
-| `/ig-reel` | Satu ide jadi Reel. Tiga hook dari 29 formula, diskor, lalu naskah, teks layar dan beat sheet berwaktu. |
-| `/ig-viral` | Mencari yang jalan di niche-mu, mengurutkan berdasarkan kelipatan terhadap median akunnya sendiri, menamai formulanya, menulis swipe file. |
-| `/ig-caption` | Caption yang dicek linter. Menunjukkan 125 karakter yang tampil sebelum "... selengkapnya". |
-| `/ig-carousel` | Postingan geser. Cover, teks per slide, file 1080x1350. |
-| `/ig-story` | Urutan story harian, stiker mana untuk apa, dan funnel DM di mana mereka yang bergerak duluan. |
-| `/ig-profile` | Skor profil dari 100 dengan rubrik 12 bagian, lalu tulis ulang mulai dari yang paling banyak kehilangan poin. |
-| `/ig-plan` | Rencana seminggu: apa, format, jam (zona audiens), momen lokal, dan 10 akun untuk engagement. |
-| `/ig-human` | Humanizer. Dua script yang benar-benar jalan. |
-| `/ig-comment` | Komen di post orang lain. Sembilan jenis. Tidak pernah "mantap kak 🔥". |
-| `/ig-reply` | Kolom komen post sendiri. Dipilah, lalu ditulis sesuai urutan nilainya. |
-| `/ig-dm` | Pengiriman kata kunci, pesan pertama, pitch kolab, dan dua follow-up. Dua. |
-| `/ig-repurpose` | Satu video, podcast, live atau artikel jadi seminggu Reels dan carousel. |
-| `/ig-audit` | Bedah konten yang sudah diposting. Diurutkan berdasarkan outlier multiple dan kirim per jangkauan, bukan views. |
+| `/spika-reel` | Satu ide jadi Reel. Tiga hook dari 29 formula, diskor, lalu naskah, teks layar dan beat sheet berwaktu. |
+| `/spika-viral` | Mencari yang jalan di niche-mu, mengurutkan berdasarkan kelipatan terhadap median akunnya sendiri, menamai formulanya, menulis swipe file. |
+| `/spika-caption` | Caption yang dicek linter. Menunjukkan 125 karakter yang tampil sebelum "... selengkapnya". |
+| `/spika-carousel` | Postingan geser. Cover, teks per slide, file 1080x1350. |
+| `/spika-story` | Urutan story harian, stiker mana untuk apa, dan funnel DM di mana mereka yang bergerak duluan. |
+| `/spika-profile` | Skor profil dari 100 dengan rubrik 12 bagian, lalu tulis ulang mulai dari yang paling banyak kehilangan poin. |
+| `/spika-plan` | Rencana seminggu: apa, format, jam (zona audiens), momen lokal, dan 10 akun untuk engagement. |
+| `/spika-human` | Humanizer. Dua script yang benar-benar jalan. |
+| `/spika-comment` | Komen di post orang lain. Sembilan jenis. Tidak pernah "mantap kak 🔥". |
+| `/spika-reply` | Kolom komen post sendiri. Dipilah, lalu ditulis sesuai urutan nilainya. |
+| `/spika-dm` | Pengiriman kata kunci, pesan pertama, pitch kolab, dan dua follow-up. Dua. |
+| `/spika-repurpose` | Satu video, podcast, live atau artikel jadi seminggu Reels dan carousel. |
+| `/spika-audit` | Bedah konten yang sudah diposting. Diurutkan berdasarkan outlier multiple dan kirim per jangkauan, bukan views. |
 
 ## Script yang benar-benar jalan
 
 Tanpa dependensi, tanpa jaringan, tidak ada yang diunggah. Butuh Python 3.
 
 ```bash
-# ig-reel
+# spika-reel
 python3 hookscore.py hooks.txt                  # urutkan opsi hook
 python3 beats.py naskah.txt --target 30         # beat sheet sebelum rekam
 python3 beats.py naskah.txt --kalibrasi 27.5    # hitung laju bicaramu
 
-# ig-caption
+# spika-caption
 python3 caption.py caption.txt --keywords "foto produk,jualan online"
 
-# ig-human
+# spika-human
 python3 humanize.py draf.txt -o bersih.txt --report
 python3 detect.py draf.txt bersih.txt
 
-# ig-viral (butuh folder ig-reel di sebelahnya)
+# spika-viral (butuh folder spika-reel di sebelahnya)
 python3 swipe.py tangkapan.tsv --out ~/.claude/instagram/swipe.md
 ```
 
@@ -101,24 +101,24 @@ PERINGKAT HOOK
 Di Claude Code:
 
 ```
-/plugin marketplace add faavha/InstaPulse.ai
-/plugin install instapulse@instapulse
+/plugin marketplace add faavha/spika
+/plugin install spika@spika
 ```
 
 Atau salin manual:
 
 ```bash
-git clone https://github.com/faavha/InstaPulse.ai.git
-cp -r InstaPulse.ai/skills/ig-* ~/.claude/skills/
+git clone https://github.com/faavha/spika.git
+cp -r spika/skills/spika-* ~/.claude/skills/
 ```
 
-Salin semua folder `ig-*` sekaligus: `ig-viral` memakai script dan
-`hooks.json` dari `ig-reel`.
+Salin semua folder `spika-*` sekaligus: `spika-viral` memakai script dan
+`hooks.json` dari `spika-reel`.
 
 ## Mulai
 
 Setelah plugin terpasang, isi profil suaramu sekali. Templatnya ada di
-`skills/ig-reel/voice-template.md`; salin ke `~/.claude/instagram/voice.md`,
+`skills/spika-reel/voice-template.md`; salin ke `~/.claude/instagram/voice.md`,
 atau kirim tiga Reels/caption-mu ke Claude dan bilang "tulisin voice.md-ku
 dari ini". Semua skill membacanya.
 
@@ -137,10 +137,10 @@ File kerja (voice.md, swipe.md, plan.md, log.md) disimpan di
 
 ## Catatan merek
 
-InstaPulse adalah proyek open source independen dan **tidak berafiliasi,
+Spika adalah proyek open source independen dan **tidak berafiliasi,
 didukung, atau disponsori oleh Meta Platforms atau Instagram**. "Instagram"
 adalah merek dagang Meta Platforms, Inc., dan disebut di sini hanya untuk
-menjelaskan bahwa skill ini dipakai untuk konten Instagram. Logo InstaPulse
+menjelaskan bahwa skill ini dipakai untuk konten Instagram. Logo Spika
 adalah desain sendiri dan tidak memakai aset merek Instagram.
 
 ## Lisensi

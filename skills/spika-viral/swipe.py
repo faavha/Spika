@@ -36,13 +36,13 @@ import statistics
 import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-HOOKS = os.path.join(HERE, "..", "ig-reel", "hooks.json")
+HOOKS = os.path.join(HERE, "..", "spika-reel", "hooks.json")
 WORD_RE = re.compile(r"[\w$%'’-]+")
 
 try:                                              # optional: score the hooks too
-    sys.path.insert(0, os.path.join(HERE, "..", "ig-reel"))
+    sys.path.insert(0, os.path.join(HERE, "..", "spika-reel"))
     from hookscore import run as score_hook       # noqa: E402
-except Exception:                                 # ig-viral copied on its own
+except Exception:                                 # spika-viral copied on its own
     score_hook = None
 
 
@@ -200,7 +200,7 @@ def to_markdown(a):
 def main():
     ap = argparse.ArgumentParser(description="Urutkan Reels berdasarkan outlier multiple.")
     ap.add_argument("input", nargs="?", default="-", help="file TSV, atau - untuk stdin")
-    ap.add_argument("--hooks", default=HOOKS, help="path ke ig-reel/hooks.json")
+    ap.add_argument("--hooks", default=HOOKS, help="path ke spika-reel/hooks.json")
     ap.add_argument("--out", help="tulis juga swipe file markdown ke sini")
     ap.add_argument("--json", action="store_true")
     args = ap.parse_args()

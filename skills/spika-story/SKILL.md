@@ -1,5 +1,5 @@
 ---
-name: ig-story
+name: spika-story
 description: >-
   Menulis Instagram Story harian berbahasa Indonesia: urutan per frame, stiker
   yang dipakai di mana, dan satu frame yang memindahkan orang ke DM. Gunakan
@@ -8,7 +8,7 @@ description: >-
   menjual sesuatu tanpa membuat post soal itu.
 ---
 
-# ig-story
+# spika-story
 
 Story bukan feed versi kecil. Feed adalah cara orang asing menemukanmu. Story
 adalah cara orang yang sudah follow memutuskan apakah kamu orang yang layak
@@ -47,7 +47,7 @@ Taruh ajakan di frame 4, bukan frame 7.
 
 Kotak pertanyaan adalah yang paling diremehkan. Setiap jawaban adalah caption,
 hook Reel, atau pembuka DM yang ditulis dengan bahasa audiens sendiri. Serahkan
-ke `/ig-reel` sebagai formula #16.
+ke `/spika-reel` sebagai formula #16.
 
 ## Konteks Indonesia
 
@@ -104,5 +104,5 @@ STORY  ·  Selasa  ·  5 frame
 Setelahnya: semua yang vote dapat balasan DM. Itu seluruh funnel-nya.
 ```
 
-Gunakan register dan sapaan dari `voice.md`. Jalankan teksnya lewat `/ig-human`.
+Gunakan register dan sapaan dari `voice.md`. Jalankan teksnya lewat `/spika-human`.
 Tidak ada yang diposting. Pengguna yang memposting.

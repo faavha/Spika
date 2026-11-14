@@ -1,5 +1,5 @@
 {
-  "name": "instapulse",
+  "name": "spika",
   "owner": {
     "name": "Favha"
   },
@@ -8,9 +8,9 @@
   },
   "plugins": [
     {
-      "name": "instapulse",
+      "name": "spika",
       "source": "./",
-      "description": "InstaPulse: 13 skill Instagram berbahasa Indonesia untuk kreator dan UMKM."
+      "description": "Spika: 13 skill Instagram berbahasa Indonesia untuk kreator dan UMKM."
     }
   ]
 }
