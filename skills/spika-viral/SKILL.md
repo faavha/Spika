@@ -36,6 +36,8 @@ dengan `swipe.py` (views / median post sebelumnya, akun dan format yang sama).
    baris sudah memuat kelipatan, views, median akun, format, judul/hook,
    nomor formula hook, dan tautan.
 3. `get_account_breakdown` untuk 2–3 akun yang paling sering muncul.
+   `get_topic_gaps` untuk topik yang sering meledak tapi jarang dibuat (celah)
+   dan yang sudah jenuh; tandai di swipe file.
 4. `get_trending` hanya sebagai pembanding tren umum, bukan bukti niche.
 
 Langsung ke Langkah 3 dengan data itu. Browsing manual (Langkah 1–2) tetap

@@ -1,21 +1,23 @@
 {
   "name": "spika",
   "version": "0.3.0",
-  "description": "Spika: 13 skill Claude untuk konten Instagram berbahasa Indonesia. Naskah Reels dengan 29 formula hook dan beat sheet berbasis suku kata, riset Reels viral (outlier multiple), caption ber-linter, carousel, story, skor profil, rencana mingguan WIB/WITA/WIT, komen, balasan, DM, repurpose, audit, dan humanizer 'bahasa AI' Indonesia. Tidak berafiliasi dengan Meta/Instagram. Adaptasi dari instagram-agent-skill (MIT) oleh Jake Schincariol.",
+  "description": "Spika: 15 skill Claude untuk konten Instagram dan YouTube berbahasa Indonesia. Naskah Reels dengan 29 formula hook dan beat sheet berbasis suku kata, naskah video YouTube panjang (termasuk faceless), judul & thumbnail, riset konten viral (outlier multiple), caption ber-linter, carousel, story, skor profil, rencana mingguan WIB/WITA/WIT, komen, balasan, DM, repurpose, audit, dan humanizer 'bahasa AI' Indonesia. Bisa membaca data Spika App lewat MCP. Tidak berafiliasi dengan Meta/Instagram/YouTube. Adaptasi dari instagram-agent-skill (MIT) oleh Jake Schincariol.",
   "author": {
     "name": "Favha"
   },
   "homepage": "https://github.com/faavha/spika",
   "license": "MIT",
   "keywords": [
-    "instagram",
-    "indonesia",
-    "reels",
     "caption",
-    "konten",
+    "faceless",
     "humanizer",
+    "indonesia",
+    "instagram",
+    "konten",
+    "reels",
+    "social media",
     "umkm",
-    "social media"
+    "youtube"
   ],
   "repository": "https://github.com/faavha/spika"
 }

@@ -4,7 +4,7 @@
 
 # Spika
 
-**Asisten konten untuk Instagram, berbahasa Indonesia.** Tiga belas skill Claude
+**Asisten konten untuk Instagram dan YouTube, berbahasa Indonesia.** Lima belas skill Claude
 yang menulis naskah Reels, caption, carousel, story, komen, balasan dan DM,
 menilai hook sebelum kamu merekam, merencanakan minggumu, dan membedah
 Insights-mu, dengan bahasa, budaya, dan kebiasaan penonton Indonesia.
@@ -40,7 +40,7 @@ karya Jake Schincariol (MIT), ditulis ulang untuk bahasa Indonesia.
 | Caption | CTA bahasa Inggris | CTA Indonesia ("komen MAU", "cek link di bio"), hashtag generik lokal (#fypシ, #viralindonesia), sapaan di baris pertama ditandai |
 | Konteks | AS | rupiah, WIB/WITA/WIT, gajian, Ramadan, Harbolnas, "harga berapa kak?", spam judi online, sapaan "Kak", link WhatsApp, label Paid Partnership, SARA/UU ITE |
 
-## Ketiga belas skill
+## Kelima belas skill
 
 | perintah | fungsinya |
 | --- | --- |
@@ -57,6 +57,8 @@ karya Jake Schincariol (MIT), ditulis ulang untuk bahasa Indonesia.
 | `/spika-dm` | Pengiriman kata kunci, pesan pertama, pitch kolab, dan dua follow-up. Dua. |
 | `/spika-repurpose` | Satu video, podcast, live atau artikel jadi seminggu Reels dan carousel. |
 | `/spika-audit` | Bedah konten yang sudah diposting. Diurutkan berdasarkan outlier multiple dan kirim per jangkauan, bukan views. |
+| `/spika-judul` | Judul dan konsep thumbnail YouTube dari pola outlier niche, diskor, plus pasangan untuk Test & Compare. |
+| `/spika-video` | Naskah video YouTube panjang (juga faceless/voiceover AI): struktur retensi, narasi siap dibacakan, daftar visual per adegan, bab. |
 
 ## Script yang benar-benar jalan
 

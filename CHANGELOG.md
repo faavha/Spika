@@ -8,6 +8,12 @@
   hasilnya dengan `save_content_plan` sebagai draf. Tanpa MCP, alur manual
   tetap sama.
 - README: bagian "Data otomatis dengan Spika App".
+- **Baru: `/spika-video`**: naskah video YouTube panjang (5–20 menit), termasuk
+  faceless dengan voiceover AI: outline dulu, pembuka diskor, narasi ramah TTS,
+  daftar visual per adegan, bab, durasi dari `beats.py`.
+- **Baru: `/spika-judul`**: 8–10 judul dari pola outlier niche, skor 5 kriteria
+  (termasuk jujur), 3 konsep thumbnail faceless, pasangan Test & Compare.
+- `spika-viral` dan `spika-plan` memakai `get_topic_gaps` (topik celah/jenuh).
 
 ## 0.2.0 - 2026-11-14
 

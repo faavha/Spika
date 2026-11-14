@@ -22,7 +22,8 @@ data, bukan dari ingatan:
    terbit. Jangan ulang tema dua minggu terakhir.
 2. `get_my_performance`: format dan topik yang menang di akun pengguna.
 3. `list_niches` lalu `get_niche_outliers` untuk niche utama (30 hari): ambil
-   3–5 outlier sebagai rujukan slot, cantumkan tautannya.
+   3–5 outlier sebagai rujukan slot, cantumkan tautannya. `get_topic_gaps`:
+   minimal satu slot dari topik **celah**, hindari topik **jenuh**.
 4. `get_trending`: satu slot boleh menunggangi topik yang sedang ramai kalau
    nyambung dengan niche.
 5. `get_posting_times` (niche, dan `own: true` kalau datanya cukup) untuk jam.
@@ -34,7 +35,8 @@ data, bukan dari ingatan:
 
 Platform di Spika App bisa YouTube, Instagram, TikTok, dan Facebook. Aturan
 format di bawah ditulis untuk Instagram; untuk YouTube Shorts dan video panjang
-pakai bukti dari outlier niche itu sendiri.
+pakai bukti dari outlier niche itu sendiri, lalu `/spika-judul` dan
+`/spika-video` untuk tiap slot video panjang.
 
 ## Input
 
