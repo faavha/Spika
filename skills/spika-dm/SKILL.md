@@ -1,5 +1,5 @@
 ---
-name: ig-dm
+name: spika-dm
 description: >-
   Menulis DM Instagram berbahasa Indonesia yang dibalas: pengiriman kata kunci,
   pesan pertama ke orang yang sudah berinteraksi, pitching kolaborasi atau
@@ -8,7 +8,7 @@ description: >-
   "nawarin kolab", atau sedang menghubungi orang tertentu.
 ---
 
-# ig-dm
+# spika-dm
 
 DM Instagram adalah satu-satunya tempat di platform ini di mana uang benar-benar
 berpindah tangan, dan juga tempat kebanyakan akun membakar niat baik yang sudah
@@ -126,5 +126,5 @@ Lalu berhenti. Yang ketiga tidak mengonversi siapa pun dan merusak hubungan.
 ## Output
 
 Pesannya, jumlah karakternya, dan dua follow-up dengan hari pengirimannya,
-semua lewat `/ig-human`. Pengguna yang mengirim semuanya secara manual, atau
+semua lewat `/spika-human`. Pengguna yang mengirim semuanya secara manual, atau
 lewat otomatisasi resmi miliknya khusus untuk balasan kata kunci.

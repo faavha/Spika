@@ -1,5 +1,5 @@
 ---
-name: ig-viral
+name: spika-viral
 description: >-
   Mencari Reels yang benar-benar sedang jalan di niche pengguna, mengurutkannya
   berdasarkan seberapa jauh tiap Reel mengalahkan akunnya sendiri (outlier
@@ -10,7 +10,7 @@ description: >-
   bukti.
 ---
 
-# ig-viral
+# spika-viral
 
 Skill riset. Semua skill lain di paket ini menulis; yang ini pergi melihat.
 Jalankan sebulan sekali, bukan tiap hari. Formula bertahan satu musim.
@@ -21,7 +21,7 @@ Satu script tinggal di folder skill ini:
 python3 swipe.py tangkapan.tsv --out ~/.claude/instagram/swipe.md
 ```
 
-Script ini mengimpor `hookscore.py` dan `hooks.json` dari folder `ig-reel`,
+Script ini mengimpor `hookscore.py` dan `hooks.json` dari folder `spika-reel`,
 jadi dua skill ini harus terpasang bersama.
 
 ## Satu ide yang membuat ini layak
@@ -129,7 +129,7 @@ python3 swipe.py tangkapan.tsv --out ~/.claude/instagram/swipe.md
 ```
 
 Script menghitung outlier multiple, menamai formula hook memakai 29 formula
-yang sama dengan `/ig-reel`, memberi skor tiap hook dengan `hookscore.py`, dan
+yang sama dengan `/spika-reel`, memberi skor tiap hook dengan `hookscore.py`, dan
 mencetak apa yang membedakan sepertiga teratas dari sepertiga terbawah.
 
 ## Langkah 4: katakan artinya, hati-hati
@@ -156,7 +156,7 @@ mengatakannya adalah beda antara riset dan ramalan zodiak.
 
 Untuk tiga formula teratas, tulis **versi pengguna**: cerita mereka sendiri,
 angka mereka sendiri, dalam bentuk yang sedang jalan. Serahkan masing-masing ke
-`/ig-reel` dengan id formula sudah dipilih.
+`/spika-reel` dengan id formula sudah dipilih.
 
 Jangan pernah menyerahkan "bikin reels kayak gini". Serahkan kalimat hook yang
 bisa mereka ucapkan besok.
@@ -187,7 +187,7 @@ VERSIMU
 
 (Angka di atas ilustrasi format, bukan data.)
 
-Tulis swipe file ke `~/.claude/instagram/swipe.md`. `/ig-reel` dan `/ig-plan`
+Tulis swipe file ke `~/.claude/instagram/swipe.md`. `/spika-reel` dan `/spika-plan`
 sama-sama membacanya, itulah intinya: setelah ini jalan sekali, seluruh paket
 bekerja dari bukti pengguna sendiri, bukan dari default.
 

@@ -1,5 +1,22 @@
 # Changelog
 
+## 0.2.0 - 2026-11-14
+
+**Ganti nama: InstaPulse → Spika.** Meta melarang aplikasi yang terhubung ke
+API Instagram memakai "Insta", "Gram", atau "IG" di namanya, dan proyek ini
+akan meluas ke TikTok, YouTube, dan Facebook. Spika = *spike* (lonjakan
+outlier) + Spica (bintang paling terang di rasi Virgo).
+
+- Plugin `instapulse` → `spika`; perintah sekarang `/plugin install spika@spika`.
+- Semua skill `ig-*` → `spika-*` (`spika-reel`, `spika-plan`, `spika-viral`, dst.).
+- Repo pindah ke `github.com/faavha/spika` (nama lama tetap di-redirect GitHub).
+- Folder kerja `~/.claude/instagram/` **tidak berubah**, jadi voice.md, swipe.md,
+  plan.md, dan log.md yang sudah ada tetap terbaca.
+
+**Migrasi:** uninstall `instapulse`, lalu pasang ulang dengan perintah di
+README. Kalau dulu menyalin manual, hapus folder `~/.claude/skills/ig-*` dan
+salin `spika-*`.
+
 ## 0.1.1 - 2026-11-03
 
 Ditemukan saat uji pertama InstaPulse membuat Reel dan caption untuk dirinya sendiri.

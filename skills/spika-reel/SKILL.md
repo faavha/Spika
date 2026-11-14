@@ -1,5 +1,5 @@
 ---
-name: ig-reel
+name: spika-reel
 description: >-
   Menulis Reel Instagram berbahasa Indonesia dari ide mentah: tiga opsi hook dari
   29 formula (termasuk Ternyata, POV, Spill), naskah ucapan, teks layar, dan beat
@@ -9,7 +9,7 @@ description: >-
   "make a reel about X", atau mau rekam tapi belum punya kalimat pertama.
 ---
 
-# ig-reel
+# spika-reel
 
 Mengubah satu ide mentah jadi Reel yang ditonton sampai habis.
 
@@ -53,7 +53,7 @@ terdengar seperti AI atau seperti siaran pers saat diucapkan.
 3. Kalau idenya tipis, jangan diisi angin. Ajukan satu pertanyaan gabungan:
    apa yang terjadi, ke siapa, dan berapa ruginya atau hasilnya (dalam rupiah,
    jam, jumlah pesanan). Reel butuh satu hal spesifik yang benar.
-4. Kalau `~/.claude/instagram/swipe.md` ada, baca. `/ig-viral` yang menulisnya,
+4. Kalau `~/.claude/instagram/swipe.md` ada, baca. `/spika-viral` yang menulisnya,
    dan itu bukti pengguna sendiri soal formula yang sedang jalan di niche-nya.
    Bukti itu mengalahkan default di file ini.
 
@@ -97,7 +97,7 @@ beat tanpa hal konkret, tidak ada loop. Ulangi sampai bersih. Kalau pengguna
 belum pernah kalibrasi, sarankan sekali: rekam diri membaca naskah, catat
 detiknya, jalankan `--kalibrasi`.
 
-**5. Humanize.** Jalankan naskah lewat `/ig-human` sebelum ditunjukkan.
+**5. Humanize.** Jalankan naskah lewat `/spika-human` sebelum ditunjukkan.
 
 **6. Cetak bloknya.** Naskah di blok kode, teks layar sebagai daftar terpisah
 dengan waktunya, lalu:
@@ -108,14 +108,14 @@ hook:       #3 Nggak Ada yang Bilang, skor 84 KUAT
 durasi:     28,4 dtk, 9 beat, 5,5 suku kata/dtk
 teks layar: 6 kartu
 humanizer:  4 jejak dihapus, skor manusia 81 LULUS
-caption:    lanjut ke /ig-caption
+caption:    lanjut ke /spika-caption
 
 Balas "ya" untuk dicatat, atau bilang apa yang mau diubah.
 ```
 
 **7. Jangan pernah publikasi.** Skill ini menghasilkan naskah. Pengguna yang
 merekam dan memposting. Saat "ya", tambahkan ke `~/.claude/instagram/log.md`:
-tanggal, nomor formula hook, dan kalimat pertama, supaya `/ig-audit` punya
+tanggal, nomor formula hook, dan kalimat pertama, supaya `/spika-audit` punya
 riwayat.
 
 ## Teks layar adalah naskah terpisah
@@ -153,7 +153,7 @@ riwayat.
 ## Contoh
 
 ```
-/ig-reel bikin penawaran harga dari 5 jam jadi 20 menit pakai satu template
+/spika-reel bikin penawaran harga dari 5 jam jadi 20 menit pakai satu template
 ```
 
 ```

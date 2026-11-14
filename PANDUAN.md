@@ -1,14 +1,14 @@
-# Panduan Pakai InstaPulse
+# Panduan Pakai Spika
 
 Panduan ini untuk kreator, UMKM, admin akun kampus/instansi, atau siapa pun
 yang mengelola Instagram berbahasa Indonesia dan memakai Claude.
 
 Intinya: **kamu tidak perlu menghafal perintah.** Setelah terpasang, cukup
 minta ke Claude dengan bahasa biasa ("bikinin naskah reels soal X", "balasin
-komen-komen ini"), dan Claude akan memakai skill yang cocok. Perintah `/ig-...`
+komen-komen ini"), dan Claude akan memakai skill yang cocok. Perintah `/spika-...`
 hanya jalan pintas kalau kamu mau memilih skill-nya sendiri.
 
-InstaPulse **tidak pernah memposting apa pun.** Ia menulis, menilai, dan
+Spika **tidak pernah memposting apa pun.** Ia menulis, menilai, dan
 merencanakan. Kamu yang memposting.
 
 ---
@@ -18,28 +18,28 @@ merencanakan. Kamu yang memposting.
 ### Di Claude Code (terminal)
 
 ```
-/plugin marketplace add faavha/InstaPulse.ai
-/plugin install instapulse@instapulse
+/plugin marketplace add faavha/spika
+/plugin install spika@spika
 ```
 
-Skill akan muncul sebagai `instapulse:ig-reel`, `instapulse:ig-caption`, dan
+Skill akan muncul sebagai `spika:spika-reel`, `spika:spika-caption`, dan
 seterusnya.
 
 ### Di aplikasi Claude (desktop / web)
 
-Unduh file `instapulse.plugin` dari halaman
-[Releases](https://github.com/faavha/InstaPulse.ai/releases) (atau minta Claude
+Unduh file `spika.plugin` dari halaman
+[Releases](https://github.com/faavha/spika/releases) (atau minta Claude
 mengemasnya dari repo ini), lalu unggah ke percakapan dan pasang dari kartu
 plugin yang muncul.
 
 ### Manual (salin skill saja)
 
 ```bash
-git clone https://github.com/faavha/InstaPulse.ai.git
-cp -r InstaPulse.ai/skills/ig-* ~/.claude/skills/
+git clone https://github.com/faavha/spika.git
+cp -r spika/skills/spika-* ~/.claude/skills/
 ```
 
-Salin semua folder `ig-*` sekaligus. `ig-viral` memakai script dari `ig-reel`.
+Salin semua folder `spika-*` sekaligus. `spika-viral` memakai script dari `spika-reel`.
 
 **Syarat:** Python 3 untuk script penilai (tanpa library tambahan, tanpa internet).
 Tanpa Python, skill tetap jalan sebagai panduan menulis, tapi skor otomatisnya hilang.
@@ -57,7 +57,7 @@ Cara paling gampang, bilang ke Claude:
 > Ini tiga caption Reels-ku. Tulisin voice.md-ku dari sini.
 > [tempel tiga caption atau transkrip]
 
-Atau isi manual dari template `skills/ig-reel/voice-template.md`.
+Atau isi manual dari template `skills/spika-reel/voice-template.md`.
 
 **Kalibrasi laju bicara (opsional, sangat disarankan).** Rekam dirimu membaca
 satu naskah dengan tempo biasa, catat detiknya, lalu:
@@ -72,24 +72,24 @@ semua hitungan durasi Reels.
 ## 3. Alur kerja mingguan yang disarankan
 
 ```
-Sebulan sekali   /ig-viral    riset apa yang jalan di niche-mu  -> swipe.md
-                 /ig-audit    bedah 30 post terakhir           -> apa yang distop/diperbanyak
-Seminggu sekali  /ig-plan     rencana 4-5 post + story + daftar engagement -> plan.md
-Tiap konten      /ig-reel atau /ig-carousel  ->  /ig-caption  ->  (otomatis lewat /ig-human)
-Tiap hari        /ig-story    3-5 frame
-                 /ig-comment  20 menit engagement sebelum posting
-                 /ig-reply    balas komen di jam pertama
-Saat perlu       /ig-dm, /ig-profile, /ig-repurpose
+Sebulan sekali   /spika-viral    riset apa yang jalan di niche-mu  -> swipe.md
+                 /spika-audit    bedah 30 post terakhir           -> apa yang distop/diperbanyak
+Seminggu sekali  /spika-plan     rencana 4-5 post + story + daftar engagement -> plan.md
+Tiap konten      /spika-reel atau /spika-carousel  ->  /spika-caption  ->  (otomatis lewat /spika-human)
+Tiap hari        /spika-story    3-5 frame
+                 /spika-comment  20 menit engagement sebelum posting
+                 /spika-reply    balas komen di jam pertama
+Saat perlu       /spika-dm, /spika-profile, /spika-repurpose
 ```
 
 Skill-skill ini saling membaca file di `~/.claude/instagram/`:
 
 | file | ditulis oleh | dibaca oleh |
 | --- | --- | --- |
-| `voice.md` | kamu / `/ig-reel` | semua |
-| `swipe.md` | `/ig-viral` | `/ig-reel`, `/ig-plan` |
-| `plan.md` | `/ig-plan` | skill lain |
-| `log.md` | `/ig-reel`, `/ig-comment` | `/ig-audit`, `/ig-plan` |
+| `voice.md` | kamu / `/spika-reel` | semua |
+| `swipe.md` | `/spika-viral` | `/spika-reel`, `/spika-plan` |
+| `plan.md` | `/spika-plan` | skill lain |
+| `log.md` | `/spika-reel`, `/spika-comment` | `/spika-audit`, `/spika-plan` |
 
 Makin sering dipakai, makin banyak yang berdasarkan bukti dari akunmu sendiri,
 bukan aturan umum.
@@ -100,19 +100,19 @@ bukan aturan umum.
 
 | skill | contoh yang bisa kamu ketik |
 | --- | --- |
-| `/ig-reel` | "Bikinin reels: aku hemat Rp400 ribu sebulan setelah pasang panel surya 1kW di rumah." |
-| `/ig-caption` | "Caption buat reels tadi. Kata pencarian: panel surya rumah, hemat listrik." |
-| `/ig-carousel` | "Jadikan carousel: rincian modal jualan sambal Rp750 ribu." |
-| `/ig-story` | "Story hari ini, aku mau jualan PO kue lebaran tanpa bikin post." |
-| `/ig-profile` | "Nilai profil IG-ku" + screenshot bagian atas profil |
-| `/ig-plan` | "Rencanain minggu depan. Minggu ini aku dapat 3 klien baru dan 1 yang batal." |
-| `/ig-viral` | "Cari reels yang lagi jalan di niche kuliner rumahan Solo." |
-| `/ig-human` | "Bikin caption ini nggak kayak ChatGPT." + tempel teks |
-| `/ig-comment` | "Komenin 5 post ini buat engagement hari ini." + tempel |
-| `/ig-reply` | "Balasin komen-komen ini." + screenshot kolom komen |
-| `/ig-dm` | "Dia komen MAU di reels-ku, kirim apa?" |
-| `/ig-repurpose` | "Ini transkrip live IG 40 menit, potong jadi konten seminggu." |
-| `/ig-audit` | "Ini insights 20 reels terakhir, apa yang jalan?" + screenshot |
+| `/spika-reel` | "Bikinin reels: aku hemat Rp400 ribu sebulan setelah pasang panel surya 1kW di rumah." |
+| `/spika-caption` | "Caption buat reels tadi. Kata pencarian: panel surya rumah, hemat listrik." |
+| `/spika-carousel` | "Jadikan carousel: rincian modal jualan sambal Rp750 ribu." |
+| `/spika-story` | "Story hari ini, aku mau jualan PO kue lebaran tanpa bikin post." |
+| `/spika-profile` | "Nilai profil IG-ku" + screenshot bagian atas profil |
+| `/spika-plan` | "Rencanain minggu depan. Minggu ini aku dapat 3 klien baru dan 1 yang batal." |
+| `/spika-viral` | "Cari reels yang lagi jalan di niche kuliner rumahan Solo." |
+| `/spika-human` | "Bikin caption ini nggak kayak ChatGPT." + tempel teks |
+| `/spika-comment` | "Komenin 5 post ini buat engagement hari ini." + tempel |
+| `/spika-reply` | "Balasin komen-komen ini." + screenshot kolom komen |
+| `/spika-dm` | "Dia komen MAU di reels-ku, kirim apa?" |
+| `/spika-repurpose` | "Ini transkrip live IG 40 menit, potong jadi konten seminggu." |
+| `/spika-audit` | "Ini insights 20 reels terakhir, apa yang jalan?" + screenshot |
 
 ---
 
@@ -147,19 +147,19 @@ sebagai checklist. Grafik retensi di Insights akunmu selalu lebih benar.
 Semua script bisa dipakai sendiri dari terminal:
 
 ```bash
-cd skills/ig-reel
+cd skills/spika-reel
 python3 hookscore.py --hook "Rp18 juta hilang gara-gara satu pasal di kontrak."
 python3 beats.py naskah.txt --target 30 --sps 6.2
 
-cd ../ig-caption
+cd ../spika-caption
 python3 caption.py caption.txt --keywords "foto produk,jualan online"
 
-cd ../ig-human
+cd ../spika-human
 python3 humanize.py draf.txt -o bersih.txt --report
 python3 detect.py draf.txt bersih.txt
 python3 detect.py draf.txt --register formal
 
-cd ../ig-viral
+cd ../spika-viral
 python3 swipe.py tangkapan.tsv --out ~/.claude/instagram/swipe.md
 ```
 
@@ -170,11 +170,11 @@ Tambahkan `--json` ke script mana pun untuk output yang bisa diolah program lain
 ## 7. Menyesuaikan
 
 - **Kata yang memang gayamu ditandai sebagai "bahasa AI"?** Hapus entrinya di
-  `skills/ig-human/slop.json`.
-- **Menemukan pola hook baru di `/ig-viral`?** Tambahkan formula ke
-  `skills/ig-reel/hooks.json` (id, template, contoh, regex `match`).
+  `skills/spika-human/slop.json`.
+- **Menemukan pola hook baru di `/spika-viral`?** Tambahkan formula ke
+  `skills/spika-reel/hooks.json` (id, template, contoh, regex `match`).
 - **Rubrik profil kurang cocok untuk niche-mu?** Ubah bobot di
-  `skills/ig-profile/rubric.json` (total harus tetap 100).
+  `skills/spika-profile/rubric.json` (total harus tetap 100).
 
 Kontribusi lewat pull request sangat diterima, terutama contoh caption dan hook
 asli bahasa Indonesia untuk mengkalibrasi skor.
@@ -183,7 +183,7 @@ asli bahasa Indonesia untuk mengkalibrasi skor.
 
 ## 8. Pertanyaan umum
 
-**Apakah InstaPulse login ke Instagram atau memposting otomatis?**
+**Apakah Spika login ke Instagram atau memposting otomatis?**
 Tidak. Tidak ada login, tidak ada API Instagram, tidak ada posting, follow,
 like, atau DM otomatis. Otomatisasi seperti itu melanggar Ketentuan Instagram
 dan bisa membuat akun dibatasi.

@@ -1,5 +1,5 @@
 ---
-name: ig-plan
+name: spika-plan
 description: >-
   Menyusun rencana Instagram seminggu untuk akun Indonesia: apa yang diposting,
   format apa, jam berapa (WIB/WITA/WIT), dan dengan siapa berinteraksi. Gunakan
@@ -8,7 +8,7 @@ description: >-
   ingin jadwal posting dan daftar akun untuk engagement.
 ---
 
-# ig-plan
+# spika-plan
 
 Ruang kendali. Semua skill lain di paket ini mengeksekusi; yang ini memutuskan
 apa yang dieksekusi. Jalankan sekali seminggu, di hari yang sama.
@@ -16,7 +16,7 @@ apa yang dieksekusi. Jalankan sekali seminggu, di hari yang sama.
 ## Input
 
 Kalau `~/.claude/instagram/voice.md`, `swipe.md` dan `log.md` ada, baca. Swipe
-file adalah bukti pengguna sendiri dari `/ig-viral` soal formula yang sedang
+file adalah bukti pengguna sendiri dari `/spika-viral` soal formula yang sedang
 jalan di niche-nya, dan itu mengalahkan apa pun di file ini. Log mencegah
 rencana mengulang tema dua minggu terakhir.
 
@@ -47,7 +47,7 @@ Campur sepanjang minggu, jangan pernah dua jenis yang sama berturut-turut:
 | **Tawaran** | 1 per dua minggu | apa yang dijual, terang-terangan, tanpa minta maaf. Carousel atau story. |
 
 Untuk tiap slot, beri: tema, sudut spesifik dari apa yang terjadi minggu ini,
-format, dan nomor formula hook dari `ig-reel/hooks.json`. Bukan topik, sudut.
+format, dan nomor formula hook dari `spika-reel/hooks.json`. Bukan topik, sudut.
 "AI" bukan rencana. "Klien yang batal karena proposal kita kelihatan ditulis
 ChatGPT" adalah Reel.
 
@@ -97,7 +97,7 @@ hal yang salah, dan kamu harus bilang.
 - **2 pembeli** - orang yang benar-benar bisa membeli. Komen berminggu-minggu
   sebelum DM apa pun, dan jangan pernah jualan di kolom komen.
 
-Serahkan daftarnya ke `/ig-comment`.
+Serahkan daftarnya ke `/spika-comment`.
 
 ## Output
 

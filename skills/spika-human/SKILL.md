@@ -1,5 +1,5 @@
 ---
-name: ig-human
+name: spika-human
 description: >-
   Menghapus jejak AI dari draf bahasa Indonesia (atau campuran Inggris): em dash,
   "bahasa AI" seperti "di era digital seperti sekarang ini", "bukan sekadar X
@@ -10,7 +10,7 @@ description: >-
   ditunjukkan ke pengguna.
 ---
 
-# ig-human
+# spika-human
 
 Dua script tinggal di folder skill ini dan keduanya jalan. Pakai. Jangan
 menilai dengan mata.

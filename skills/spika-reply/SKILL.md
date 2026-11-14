@@ -1,5 +1,5 @@
 ---
-name: ig-reply
+name: spika-reply
 description: >-
   Menangani komentar di Reels dan post milik pengguna sendiri: memilah, lalu
   menulis balasan bahasa Indonesia untuk yang layak dibalas, termasuk "harga
@@ -9,7 +9,7 @@ description: >-
   calon pembeli di kolom komen.
 ---
 
-# ig-reply
+# spika-reply
 
 Kolom komen di post sendiri adalah tempat jangkauan diputuskan. Setiap balasan
 adalah interaksi tambahan di post itu, balasan di jam pertama melakukan
@@ -44,7 +44,7 @@ Kalau satu pertanyaan di komen juga dimiliki tiga puluh orang lain, **balas
 dengan Reel**. Instagram melampirkan komentarnya ke video baru sebagai stiker,
 yang bertanya dapat notifikasi, dan pertanyaan dengan permintaan nyata jadi
 post dengan hook yang sudah tertulis. Tandai setiap PERTANYAAN yang memenuhi
-syarat dan serahkan ke `/ig-reel` sebagai formula #16.
+syarat dan serahkan ke `/spika-reel` sebagai formula #16.
 
 ## Cara membalas
 
@@ -85,7 +85,7 @@ ke orang yang tidak berkomentar.
 
 ## Output
 
-Satu blok, dikelompokkan, tiap balasan siap-salin dan sudah lewat `/ig-human`:
+Satu blok, dikelompokkan, tiap balasan siap-salin dan sudah lewat `/spika-human`:
 
 ```
 BALASAN  ·  84 komen  ·  41 KATA KUNCI, 3 CALON, 3 ISI, 2 PERTANYAAN, 30 DUKUNGAN, 5 NOISE

@@ -1,5 +1,5 @@
 ---
-name: ig-profile
+name: spika-profile
 description: >-
   Memberi skor profil Instagram dari 100 dengan rubrik 12 bagian lalu menulis
   ulang bagian yang kehilangan poin: kolom nama, bio, link, sorotan
@@ -9,7 +9,7 @@ description: >-
   kesannya.
 ---
 
-# ig-profile
+# spika-profile
 
 Hampir semua orang mengoptimasi hal yang salah di sini. Profil bukan etalase
 yang dijelajahi. Profil adalah **layar keputusan**, didatangi dari satu Reel,
@@ -80,7 +80,7 @@ lirik.
 ## Output
 
 Tabel skor, lalu tulisan ulang sebagai blok siap-salin dengan urutan perbaikan,
-masing-masing lewat `/ig-human`. Nilai ulang di akhir dan tunjukkan selisihnya
+masing-masing lewat `/spika-human`. Nilai ulang di akhir dan tunjukkan selisihnya
 dengan jujur. Kalau tulisan ulangnya mencapai 84 dan bukan 98, bilang 84, dan
 bilang apa yang dibutuhkan sisanya, biasanya grid, kebiasaan story, dan post
 sematan yang belum ada. Semua itu bukan tulisan ulang.
