@@ -13,6 +13,29 @@ description: >-
 Ruang kendali. Semua skill lain di paket ini mengeksekusi; yang ini memutuskan
 apa yang dieksekusi. Jalankan sekali seminggu, di hari yang sama.
 
+## Sumber data otomatis: MCP Spika (kalau tersedia)
+
+Kalau sesi ini punya tool dari server MCP **Spika App**, susun rencana dari
+data, bukan dari ingatan:
+
+1. `get_content_plans` (4 minggu): apa yang direncanakan, apa yang benar-benar
+   terbit. Jangan ulang tema dua minggu terakhir.
+2. `get_my_performance`: format dan topik yang menang di akun pengguna.
+3. `list_niches` lalu `get_niche_outliers` untuk niche utama (30 hari): ambil
+   3–5 outlier sebagai rujukan slot, cantumkan tautannya.
+4. `get_trending`: satu slot boleh menunggangi topik yang sedang ramai kalau
+   nyambung dengan niche.
+5. `get_posting_times` (niche, dan `own: true` kalau datanya cukup) untuk jam.
+6. Tulis rencana seperti di bawah, lalu **simpan dengan `save_content_plan`**:
+   `week_start` = Senin minggu yang dimaksud, `body_markdown` = strategi dan
+   alasan berbasis data, `slots` = satu item per konten (`day`, `time` WIB,
+   `platform`, `format`, `title`, `hook`, `notes`, `reference_url`).
+   Rencana tersimpan sebagai draf; pengguna yang menyetujui di aplikasi.
+
+Platform di Spika App bisa YouTube, Instagram, TikTok, dan Facebook. Aturan
+format di bawah ditulis untuk Instagram; untuk YouTube Shorts dan video panjang
+pakai bukti dari outlier niche itu sendiri.
+
 ## Input
 
 Kalau `~/.claude/instagram/voice.md`, `swipe.md` dan `log.md` ada, baca. Swipe

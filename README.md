@@ -125,6 +125,28 @@ dari ini". Semua skill membacanya.
 File kerja (voice.md, swipe.md, plan.md, log.md) disimpan di
 `~/.claude/instagram/`.
 
+## Data otomatis dengan Spika App (opsional)
+
+Tanpa tambahan apa pun, skill riset (`spika-viral`, `spika-audit`, `spika-plan`)
+bekerja dari screenshot atau data yang kamu tempel. Kalau kamu menjalankan
+**Spika App** (aplikasi pendamping self-hosted, Laravel), Claude bisa membaca
+datanya langsung lewat MCP:
+
+- performa akun sendiri dan **outlier di niche** (views ÷ median akun itu sendiri,
+  rumus yang sama dengan `swipe.py`), ditarik dari API resmi YouTube, dengan
+  Instagram, TikTok, dan Facebook menyusul;
+- tren YouTube Indonesia, jam posting yang paling sering melonjak;
+- rencana mingguan yang disimpan kembali ke aplikasi sebagai draf
+  (`save_content_plan`), bisa dijalankan otomatis tiap Minggu malam.
+
+```bash
+claude mcp add --transport http spika https://ALAMAT-SPIKA-APP/mcp \
+  --header "Authorization: Bearer TOKEN_DARI_HALAMAN_AKSES_CLAUDE"
+```
+
+Skill otomatis memakai tool MCP kalau tersedia, dan kembali ke cara manual kalau
+tidak.
+
 ## Batasan yang jujur
 
 - Skor hook dan detektor AI adalah heuristik. Ambang batasnya berasal dari

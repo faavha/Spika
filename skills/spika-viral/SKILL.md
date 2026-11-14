@@ -24,6 +24,25 @@ python3 swipe.py tangkapan.tsv --out ~/.claude/instagram/swipe.md
 Script ini mengimpor `hookscore.py` dan `hooks.json` dari folder `spika-reel`,
 jadi dua skill ini harus terpasang bersama.
 
+## Sumber data otomatis: MCP Spika (kalau tersedia)
+
+Kalau sesi ini punya tool dari server MCP **Spika App** (`list_niches`,
+`get_niche_outliers`, dan seterusnya), pakai itu **sebelum** browsing. Datanya
+ditarik dari API resmi dan kelipatannya sudah dihitung dengan rumus yang sama
+dengan `swipe.py` (views / median post sebelumnya, akun dan format yang sama).
+
+1. `list_niches` → pilih niche yang dimaksud pengguna.
+2. `get_niche_outliers` (`days` 30, naikkan ke 60–90 kalau sedikit). Setiap
+   baris sudah memuat kelipatan, views, median akun, format, judul/hook,
+   nomor formula hook, dan tautan.
+3. `get_account_breakdown` untuk 2–3 akun yang paling sering muncul.
+4. `get_trending` hanya sebagai pembanding tren umum, bukan bukti niche.
+
+Langsung ke Langkah 3 dengan data itu. Browsing manual (Langkah 1–2) tetap
+dipakai untuk platform yang belum ada di Spika App, atau untuk menangkap
+kalimat yang diucapkan di 3 detik pertama (judul YouTube bukan hook lisan).
+Jangan mengarang angka di luar hasil tool; sebut tanggal tarik datanya.
+
 ## Satu ide yang membuat ini layak
 
 **Views mentah bukan bukti.** Akun 2 juta follower dapat 400 ribu views itu

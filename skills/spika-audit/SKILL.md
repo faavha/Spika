@@ -15,6 +15,19 @@ Satu-satunya sumber jujur soal apa yang jalan untuk sebuah akun adalah akun itu
 sendiri. Setiap aturan di setiap panduan Instagram, termasuk di paket ini,
 adalah dugaan awal. 30 post terakhir pengguna adalah buktinya.
 
+## Sumber data otomatis: MCP Spika (kalau tersedia)
+
+Kalau sesi ini punya tool dari server MCP **Spika App**, mulai dari
+`get_my_performance` (akun milik pengguna, default 28 hari): median per format,
+5 post terbaik dan 5 terlemah lengkap dengan kelipatan terhadap median akun
+sendiri. Tambah `get_posting_times` dengan `own: true` untuk pola jam terbit,
+dan `get_content_plans` untuk membandingkan rencana dengan yang benar-benar
+terbit.
+
+Data API tidak memuat retensi, jangkauan non-follower, atau follow per post
+untuk semua platform. Minta screenshot untuk metrik itu dan gabungkan;
+jangan menebak.
+
 ## Input
 
 Minta yang dimiliki pengguna:

@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.3.0 - 2026-11-14
+
+- **spika-viral**, **spika-audit**, **spika-plan**: kalau server MCP Spika App
+  terhubung, skill memakai datanya lebih dulu (outlier niche, performa akun
+  sendiri, tren, jam posting, rencana minggu lalu). `spika-plan` menyimpan
+  hasilnya dengan `save_content_plan` sebagai draf. Tanpa MCP, alur manual
+  tetap sama.
+- README: bagian "Data otomatis dengan Spika App".
+
 ## 0.2.0 - 2026-11-14
 
 **Ganti nama: InstaPulse → Spika.** Meta melarang aplikasi yang terhubung ke
