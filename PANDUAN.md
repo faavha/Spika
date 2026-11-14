@@ -76,6 +76,7 @@ Sebulan sekali   /spika-viral    riset apa yang jalan di niche-mu  -> swipe.md
                  /spika-audit    bedah 30 post terakhir           -> apa yang distop/diperbanyak
 Seminggu sekali  /spika-plan     rencana 4-5 post + story + daftar engagement -> plan.md
 Tiap konten      /spika-reel atau /spika-carousel  ->  /spika-caption  ->  (otomatis lewat /spika-human)
+Video YouTube    /spika-judul  ->  /spika-video  ->  (otomatis lewat /spika-human)
 Tiap hari        /spika-story    3-5 frame
                  /spika-comment  20 menit engagement sebelum posting
                  /spika-reply    balas komen di jam pertama
@@ -89,7 +90,7 @@ Skill-skill ini saling membaca file di `~/.claude/instagram/`:
 | `voice.md` | kamu / `/spika-reel` | semua |
 | `swipe.md` | `/spika-viral` | `/spika-reel`, `/spika-plan` |
 | `plan.md` | `/spika-plan` | skill lain |
-| `log.md` | `/spika-reel`, `/spika-comment` | `/spika-audit`, `/spika-plan` |
+| `log.md` | `/spika-reel`, `/spika-video`, `/spika-judul`, `/spika-comment` | `/spika-audit`, `/spika-plan` |
 
 Makin sering dipakai, makin banyak yang berdasarkan bukti dari akunmu sendiri,
 bukan aturan umum.
@@ -108,6 +109,8 @@ bukan aturan umum.
 | `/spika-plan` | "Rencanain minggu depan. Minggu ini aku dapat 3 klien baru dan 1 yang batal." |
 | `/spika-viral` | "Cari reels yang lagi jalan di niche kuliner rumahan Solo." |
 | `/spika-human` | "Bikin caption ini nggak kayak ChatGPT." + tempel teks |
+| `/spika-judul` | "Judul dan thumbnail buat video soal jebakan paylater, niche Keuangan." |
+| `/spika-video` | "Naskah YouTube 8 menit, faceless, soal jebakan paylater buat gaji UMR." |
 | `/spika-comment` | "Komenin 5 post ini buat engagement hari ini." + tempel |
 | `/spika-reply` | "Balasin komen-komen ini." + screenshot kolom komen |
 | `/spika-dm` | "Dia komen MAU di reels-ku, kirim apa?" |

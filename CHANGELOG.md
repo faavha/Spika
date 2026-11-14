@@ -1,5 +1,20 @@
 # Changelog
 
+## 0.3.0 - 2026-11-14
+
+- **spika-viral**, **spika-audit**, **spika-plan**: kalau server MCP Spika App
+  terhubung, skill memakai datanya lebih dulu (outlier niche, performa akun
+  sendiri, tren, jam posting, rencana minggu lalu). `spika-plan` menyimpan
+  hasilnya dengan `save_content_plan` sebagai draf. Tanpa MCP, alur manual
+  tetap sama.
+- README: bagian "Data otomatis dengan Spika App".
+- **Baru: `/spika-video`**: naskah video YouTube panjang (5–20 menit), termasuk
+  faceless dengan voiceover AI: outline dulu, pembuka diskor, narasi ramah TTS,
+  daftar visual per adegan, bab, durasi dari `beats.py`.
+- **Baru: `/spika-judul`**: 8–10 judul dari pola outlier niche, skor 5 kriteria
+  (termasuk jujur), 3 konsep thumbnail faceless, pasangan Test & Compare.
+- `spika-viral` dan `spika-plan` memakai `get_topic_gaps` (topik celah/jenuh).
+
 ## 0.2.0 - 2026-11-14
 
 **Ganti nama: InstaPulse → Spika.** Meta melarang aplikasi yang terhubung ke
